@@ -19,7 +19,7 @@ import StjerneUdfyldt from "../components/StjerneUdfyldt.astro";
         <h1 class="text-3xl">Københavnerbilleder - En guide til hipster foto</h1>
         <h2 class="text-2xl italic">Af Sten Simons</h2>
         <p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
-        <Button>Køb bogen her</Button>
+        <Button variant="primary" size="small">Køb bogen her</Button>
       </div>
     </div>
   </div>
@@ -65,10 +65,10 @@ import StjerneUdfyldt from "../components/StjerneUdfyldt.astro";
   </div>
 
   <!-- Anmeldelser -->
-  <div class="px-10">
+  <!-- <div class="px-10 pt-10">
     <h1 class="text-3xl">Pressen siger</h1>
   </div>
-  <div class="px-10 grid md:grid-cols-3 md:gap-10">
+  <div class="px-10 py-10 grid md:grid-cols-3 md:gap-10">
     <div>
       <div class="flex flex-row">
         <StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneOptegnet />
@@ -87,67 +87,102 @@ import StjerneUdfyldt from "../components/StjerneUdfyldt.astro";
       </div>
       <Anmeldelser anmeldelse="Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde." person="- Volmer Hansen, Lukkertiden.dk" />
     </div>
+  </div> -->
+  <div class="px-10 pt-10 md:px-40">
+    <h1 class="text-3xl">Pressen siger</h1>
+  </div>
+  <div class="px-10 py-10 grid md:grid-cols-3 md:gap-10 md:px-40">
+    <div>
+      <div class="flex flex-row">
+        <StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneOptegnet />
+      </div>
+      <Anmeldelser anmeldelse="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen." person="-Hanne Hovgaard, Berlingeren" />
+    </div>
+    <div>
+      <div class="flex flex-row">
+        <StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneOptegnet /><StjerneOptegnet />
+      </div>
+      <Anmeldelser anmeldelse="Teksten er underholdende, og billederne er sku flotte. Hvad mere skal man sige om en fotobog?" person="- Kim Kloggaard, Fotojournalen.dk" />
+    </div>
+    <div>
+      <div class="flex flex-row">
+        <StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt /><StjerneUdfyldt />
+      </div>
+      <Anmeldelser anmeldelse="Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde." person="- Volmer Hansen, Lukkertiden.dk" />
+    </div>
   </div>
 
+  <!-- Galleri -->
+  <div class="px-10 grid md:grid-cols-2 md:px-40 md:gap-10" id="galleri">
+    <h1 class="text-3xl">Billeder fra bogen</h1>
+  </div>
+  <div class="px-10 grid md:grid-cols-4 gap-4 mx-auto w-full max-w-6xl py-10">
+    <img src="/img/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/amarminoen-med-et-agfa-le-box-11.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/anamorfiske-landskaber-amager-faelled-4.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/foraar-med-et-agfa-le-box-2021-17.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/kbh-by-night-3.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/lomo-smena-15.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/lomo-smena-17.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/orestad-til-islands-brygge-pentax-auto-110-14.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/orestad-til-islands-brygge-pentax-auto-110-16.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/orestad-til-islands-brygge-pentax-auto-110-17.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/pinhole-objektiver-ved-eghjorten-3.jpg" alt="billede" class="w-72 h-72" />
+    <img src="/img/vinter-2021-med-lomo-smena-6.jpg" alt="billede" class="w-72 h-72" />
+  </div>
 
-<!-- Galleri -->
-<div class="px-10 grid md:grid-cols-2 md:px-40 md:gap-10" id="galleri">
-  <h1 class="text-3xl">Billeder fra bogen</h1>
-</div>
-<div class="px-10 grid md:grid-cols-4 gap-4 mx-auto w-full max-w-6xl py-10">
-  <img src="/img/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/amarminoen-med-et-agfa-le-box-11.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/anamorfiske-landskaber-amager-faelled-4.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/foraar-med-et-agfa-le-box-2021-17.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/kbh-by-night-3.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/lomo-smena-15.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/lomo-smena-17.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/orestad-til-islands-brygge-pentax-auto-110-14.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/orestad-til-islands-brygge-pentax-auto-110-16.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/orestad-til-islands-brygge-pentax-auto-110-17.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/pinhole-objektiver-ved-eghjorten-3.jpg" alt="billede" class="w-72 h-72" />
-  <img src="/img/vinter-2021-med-lomo-smena-6.jpg" alt="billede" class="w-72 h-72" />
-</div>
-
-<!-- Forfatteren -->
-<div class="grid md:grid-cols-2">
+  <!-- Forfatteren -->
+  <!-- <div class="grid md:grid-cols-2">
   <h1 class="text-3xl px-10 md:text-right">Forfatteren</h1>
 </div>
 <div class="px-10 gap-5 grid md:grid-cols-2">
-  <img src="/img/sten_simons.jpg" alt="" class="w-80 h-80" />
+  <img src="/img/sten_simons.jpg" alt="" class="w-80 h-80 md:float-right" />
   <p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
   <Button>Køb Københavnerbilleder nu!</Button>
-</div>
+</div> -->
+  <div class="grid md:grid-cols-2" id="forfatteren">
+    <h1 class="text-3xl px-10 pb-4 md:text-right md:px-1">Forfatteren</h1>
+  </div>
+  <div class="px-10 gap-5 grid md:grid-cols-2 items-center">
+    <div class="flex flex-col items-start md:items-end">
+      <img src="/img/sten_simons.jpg" alt="" class="w-80 h-80 pb-4" />
+      <Button variant="primary" size="small"class="mt-4">Køb Københavnerbilleder nu!</Button>
+    </div>
+    <p class="md:pr-40">
+      Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” <br />
+       Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+    </p>
+  </div>
 
-<!-- Forms -->
-<div class="min-h-screen flex items-center justify-center" id="koebNu">
-  <form class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-    <label class="block" for="fname"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="fname" name="fname" placeholder="Antal" /><br />
+  <!-- Forms -->
+  <div class="min-h-screen flex items-center justify-center" id="koebNu">
+    <form class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+      <label class="block" for="fname"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="fname" name="fname" placeholder="Antal" /><br />
 
-    <label for="radio" id="check">Levering:</label>
-    <input type="radio" id="lname" name="lname" /> PostNord
-    <input type="radio" id="lname" name="lname" /> Afhent selv<br />
+      <label for="radio" id="check">Levering:</label>
+      <input type="radio" id="lname" name="lname" /> PostNord
+      <input type="radio" id="lname" name="lname" /> Afhent selv<br />
 
-    <label for="name"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Navn" /><br />
+      <label for="name"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Navn" /><br />
 
-    <label for="name"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Adresse" /><br />
+      <label for="name"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Adresse" /><br />
 
-    <label for="name"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="email" placeholder="Email" /><br />
+      <label for="name"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="email" placeholder="Email" /><br />
 
-    <label for="name"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Postnummer" />
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="By" /><br />
+      <label for="name"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="Postnummer" />
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" placeholder="By" /><br />
 
-    <label for="name"></label>
-    <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="tel" placeholder="Telefon" /><br />
+      <label for="name"></label>
+      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="tel" placeholder="Telefon" /><br />
 
-    <input class="rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="checkbox" id="lname" name="lname" /> Ja tak til nyhedsbreve og tilbud <br />
+      <input class="rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="checkbox" id="lname" name="lname" /> Ja tak til nyhedsbreve og tilbud <br />
 
-    <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded-md" type="submit">Fortsæt</button>
-  </form>
-</div>
+      <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded-md" type="submit">Fortsæt</button>
+    </form>
+  </div>
 </MainLayout>
